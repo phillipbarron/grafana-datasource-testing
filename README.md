@@ -7,7 +7,9 @@ docker run -d -p 3000:3000 --name grafana grafana/grafana:7.5.0
 
 # SSH in to instance
 
+```bash
 docker exec -it grafana /bin/bash
+```
 
 ## Install Json plugin for grafana
 
@@ -28,3 +30,4 @@ docker restart grafana
 ```bash
 dev-nginx setup-app nginx-conf.yaml
 ```
+

@@ -35,10 +35,10 @@ app.post("/query", (req, res) => {
   const { targets } = req.body;
   const response = [];
   targets?.forEach((target) => {
-    const { target: metric } = target;
+    const { target: metric, data } = target;
+    console.log('data', data);
     response.push(getFakeData(metric, 30, 1000));
   });
-  console.log('resp', JSON.stringify(response, null, 2));
   res.json(response);
 });
 
