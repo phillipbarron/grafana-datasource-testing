@@ -1,0 +1,5 @@
+name: reporting-local
+domain-root: local.dev-gutools.co.uk
+mappings:
+  - port: 3001
+    prefix: reporting
