@@ -1,6 +1,6 @@
 # Local reporting setup
 
-## Start local Reporting Service
+## Start local reporting service
 
 ```bash
 yarn
