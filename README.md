@@ -1,6 +1,15 @@
 # Local reporting setup
 
+## Start local Reporting Service
+
+```bash
+yarn
+
+yarn start
+```
+
 ## Start local Grafana
+
 ```bash
 docker run -d -p 3000:3000 --name grafana grafana/grafana:7.5.0
 ```
@@ -16,6 +25,7 @@ docker exec -it grafana /bin/bash
 ```bash
 grafana-cli plugins install simpod-json-datasource
 ```
+
 ## Restart Container
 
 ```bash
